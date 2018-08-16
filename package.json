@@ -1,0 +1,14 @@
+{
+  "name": "node_code_jam",
+  "version": "1.0.0",
+  "description": "Node Solutions to Google Code Jam Problems",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "steffencm",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^10.7.1"
+  }
+}
