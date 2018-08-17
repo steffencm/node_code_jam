@@ -51,7 +51,7 @@ function findSolution(n: number): any{
 let testCases = testCaseUtil.readTestCases(fileName);
 let answers: any[] = []
 for(let testCase of testCases){
-    answers.push(findSolution(testCase));
+    answers.push(findSolution(parseInt(testCase)));
 }
 testCaseUtil.writeOutput(answers, outputFile);
 

@@ -1,13 +1,14 @@
 import fs = require('fs');
 
-export function readTestCases(fileName: string): number[]{
+export function readTestCases(fileName: string): any[]{
    
     let contents: string = fs.readFileSync(fileName, 'utf8');
     let lines: string[] = contents.split('\n');
     let numLines: number = parseInt(lines[0]);
-    let testCases: number[] = [];
+    let testCases: any[] = [];
+    //String slice instead maybe?
     for(let i = 1; i <= numLines; i ++){
-        testCases.push(parseInt(lines[i]));
+        testCases.push(lines[i]);
     }
     return testCases;
 }

@@ -46,7 +46,7 @@ var testCases = testCaseUtil.readTestCases(fileName);
 var answers = [];
 for (var _i = 0, testCases_1 = testCases; _i < testCases_1.length; _i++) {
     var testCase = testCases_1[_i];
-    answers.push(findSolution(testCase));
+    answers.push(findSolution(parseInt(testCase)));
 }
 testCaseUtil.writeOutput(answers, outputFile);
 console.log('done');

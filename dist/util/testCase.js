@@ -6,8 +6,9 @@ function readTestCases(fileName) {
     var lines = contents.split('\n');
     var numLines = parseInt(lines[0]);
     var testCases = [];
+    //String slice instead maybe?
     for (var i = 1; i <= numLines; i++) {
-        testCases.push(parseInt(lines[i]));
+        testCases.push(lines[i]);
     }
     return testCases;
 }
