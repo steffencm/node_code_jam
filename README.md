@@ -1,4 +1,5 @@
-#Node Code Jam
+Node Code Jam
+==============
 Google Code Jam problems solved in NodeJs and Typescript
 
 Node is not a great system to solve these problems in since they tend to be more cpu intensive and that's not exactly nodes forte.
