@@ -1,8 +1,5 @@
 var testCaseUtil = require('../util/testCase');
 
-let fileName: string = './data/2016_counting_sheep/A-large-practice.in';
-let outputFile: string = './data/2016_counting_sheep/A-large-practice.out';
-
 function updateSeen(newNumbers: number[], seenNumbers: boolean[]): boolean[]{
     for(let newNumber of newNumbers){
         seenNumbers[newNumber] = true;
@@ -48,11 +45,18 @@ function findSolution(n: number): any{
     
 }
 
-let testCases = testCaseUtil.readTestCases(fileName);
-let answers: any[] = []
-for(let testCase of testCases){
-    answers.push(findSolution(parseInt(testCase)));
+function solve(){
+    let fileName: string = './data/2016_counting_sheep/A-large-practice.in';
+    let outputFile: string = './data/2016_counting_sheep/A-large-practice.out';
+    let testCases = testCaseUtil.readTestCases(fileName);
+    let answers: any[] = []
+    for(let testCase of testCases){
+        answers.push(findSolution(parseInt(testCase)));
+    }
+    testCaseUtil.writeOutput(answers, outputFile);
+    console.log('done');
 }
-testCaseUtil.writeOutput(answers, outputFile);
 
-console.log('done');
+solve();
+
+
